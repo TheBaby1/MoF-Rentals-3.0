@@ -20,7 +20,7 @@ function Card(){
             {models.length > 0 ? (
                 models.map((model) => (
                     <div className={styles.card} key={model._id}>
-                        <img className={styles.cardImage} alt="Model"></img>
+                        <img className={styles.cardImage} src={model.imageUrl} alt="Model"></img>
                         <h2 className={styles.cardName}>{model.firstName}</h2>
                         <h3 className={styles.cardPrice}>Price: {model.price}</h3>
                         <p className={styles.cardText}>{model.description}</p>

@@ -1,14 +1,30 @@
 const express = require('express');
 const router = express.Router();
 const Model = require('../models/Model');
+const multer = require('multer');
+const cloudinary = require('../config/cloudinaryConfig');
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
 
+
+// Configure Storage
+const storage = new CloudinaryStorage({
+    cloudinary: cloudinary,
+    params: {
+        folder: 'mof-rentals',
+        allowed_formats: ['jpg', 'png', 'jpeg']
+    }
+});
+
+const upload = multer({ storage });
 
 // CREATE a Model
-router.post('/', async(req, res) => {
+router.post('/', upload.single('image'), async(req, res) => {
 
     try {
         const modelData = req.body;
-        const model = new Model(modelData);
+        const imageUrl = req.file ? req.file.path : '';
+
+        const model = new Model({ ...modelData, imageUrl });
         await model.save();
         res.status(200).json({ message: 'Successfully Added Model.'});
     } catch (error) {
