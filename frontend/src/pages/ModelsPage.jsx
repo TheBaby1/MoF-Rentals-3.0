@@ -5,7 +5,7 @@ function ModelsPage(){
     return (
         <>
             <Card></Card>
-            <Test></Test>
+            
         </>
     );
 }
