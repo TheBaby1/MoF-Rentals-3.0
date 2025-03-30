@@ -30,6 +30,12 @@
     color: hsl(0, 0%, 20%);
 }
 
+.card .cardAge {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+    color: hsl(0, 0%, 20%);
+}
+
 .card .cardText {
     font-family: Arial, sans-serif;
     color: hsl(0, 0%, 30%);
