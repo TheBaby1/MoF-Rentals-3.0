@@ -1,0 +1,30 @@
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: #ECDCBF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+
+.cardName {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.cancelButton {
+    background-color: hsla(0, 72%, 46%, 0.959);
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancelButton:hover {
+    background-color: hsla(0, 77%, 32%, 0.959);
+}

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const RentalSchema = new mongoose.Schema({
 
     modelId: { type: mongoose.Schema.Types.ObjectId, ref: 'Model', required: true },
+    modelName: { type: String, required: true },
     startDate: { type: Date, required: true },
     totalPrice: { type: Number, required: true },
     status:{

@@ -10,7 +10,7 @@ function Navbar(){
                 <nav className={styles.navbar}>
                     <Link to="/" className={styles.link}>Home</Link>
                     <Link to="/Models" className={styles.link}>Models</Link>
-                    <Link to="/" className={styles.link}>Rentals</Link>
+                    <Link to="/Rentals" className={styles.link}>Rentals</Link>
                 </nav>
             </header>
         </>

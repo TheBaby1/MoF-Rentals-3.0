@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ModelsPage from './pages/ModelsPage';
+import RentalsPage from './pages/RentalsPage';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/Models" element={<ModelsPage></ModelsPage>}></Route>
+        <Route path="/Rentals" element={<RentalsPage></RentalsPage>}></Route>
       </Routes>
     </Router>
   );
