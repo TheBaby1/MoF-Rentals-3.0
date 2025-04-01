@@ -1,0 +1,50 @@
+.signUpCard {
+    display: flex;
+    width: 800px;
+    height: 420px;
+    margin: 150px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signUpForm, .signUpInfo {
+    flex: 1;
+    padding: 20px;
+}
+
+.signUpForm {
+    background: #ffff;
+}
+
+.signUpForm input {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signUpInfo {
+    background: hsl(9, 74%, 59%);;
+}
+
+.inputFields {
+    margin-top: 20px;
+}
+
+.submitButton {
+    background-color: hsl(0, 2%, 84%);
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: hsl(0, 0%, 59%);
+}

@@ -21,6 +21,7 @@ mongoose
 // API Routes
 app.use('/models', require('./routes/modelRoutes'));
 app.use('/rentals', require('./routes/rentalRoutes'));
+app.use('/users', require('./routes/userRoutes'));
 
 app.listen(PORT, () => {
     console.log(`Server Running on http://localhost:${PORT}`);

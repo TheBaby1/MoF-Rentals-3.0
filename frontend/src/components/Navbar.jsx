@@ -8,7 +8,7 @@ function Navbar(){
                 <a href="/" className={styles.logo}>Logo</a>
 
                 <nav className={styles.navbar}>
-                    <Link to="/" className={styles.link}>Home</Link>
+                    <Link to="/Home" className={styles.link}>Home</Link>
                     <Link to="/Models" className={styles.link}>Models</Link>
                     <Link to="/Rentals" className={styles.link}>Rentals</Link>
                 </nav>
